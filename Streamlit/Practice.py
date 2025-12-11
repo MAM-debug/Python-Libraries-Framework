@@ -1,17 +1,5 @@
 import streamlit as st
 st.title("Simple Streamlit App")
-st.markdown("""
-    <style>
-        .stApp {
-            background-color: #ffffff;
-        }
-        
-        [data-testid="stHeader"] {
-            background-color: #667eea;
-            color: black
-        }
-    </style>
-""", unsafe_allow_html=True)
 st.write("Hey here we will practice Streamlit.")
 st.write("Streamlit is an open-source app framework for Machine Learning and Data Science teams.")
 st.markdown("Where actually we use streamlit?")
@@ -37,4 +25,4 @@ if name:
 
 checkbox=st.checkbox("Do you like Streamlit?")
 if checkbox:
-    st.write("Yay! Streamlit is awesome!")
+    st.write("Yay! Streamlit is awesomes!")
