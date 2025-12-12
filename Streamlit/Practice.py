@@ -38,4 +38,34 @@ st.subheader("This is an error message")
 st.error("This is an error message example in Streamlit.")
 st.subheader("This is a success message")
 st.success("This is a success message example in Streamlit.")
+st.divider()
+st.header("Expanders and Collapsibles demo")
+with st.expander("CLICK HERE TO EXPAND"):
+    st.write("This is an example of expanders in Streamlit.You can put any content and it will give a dropdown animation to show or hide the content.")
+    st.write("Cool right?")
+
+st.subheader("Multiple expanders example")
+with st.expander("CLICK TO KNOW SOME FACTS ABOUT STREAMLIT"):
+    st.write("Can i deploy my Streamlit apps for free?")
+    st.info("Yes, you can deploy your Streamlit apps for free using Streamlit Community Cloud.")
+
+    st.write("Do i need to know web development to use Streamlit")
+    st.info("No, you don't need to know web development to use Streamlit. It is designed to be easy for data scientists and machine learning engineers.")
+
+st.subheader("Multi-level expander example")
+
+col1,col2=st.columns(2)
+
+with col1:
+    with st.expander("Lets learn python"):
+        st.write("Pythom is a high level programmimg language use for data science,machine learning,web development and many more.")
+        st.write("It is easy to learn and has a large community support.")
+
+with col2:
+    with st.expander("Lets learn Data Science"):
+        st.write("Learn libraries like pandas for data manipularion")
+        st.write("Learn numpy for numerical computing")
+    
+
+
 
