@@ -15,6 +15,7 @@ st.subheader("4.Data Visualization")
 st.write("Streamlit supports various data visualization libraries like Matplotlib, Plotly, and Altair.")
 st.subheader("5.Integration with Machine Learning Libraries")
 st.write("Streamlit seamlessly integrates with popular machine learning libraries like TensorFlow, PyTorch, and Scikit-learn.")
+st.divider()
 st.header("Using some interactive widgets")
 st.subheader("Slider and input box example")
 name=st.text_input("Enter your name:")
@@ -26,3 +27,15 @@ if name:
 checkbox=st.checkbox("Do you like Streamlit?")
 if checkbox:
     st.write("Yay! Streamlit is awesomes!")
+
+st.divider()
+st.subheader(("Alert and info message example"))
+st.subheader("This is an info message")
+st.info("This is an info message example in Streamlit.")
+st.subheader("This is a warning message")
+st.warning("This is a warning message example in Streamlit")
+st.subheader("This is an error message")
+st.error("This is an error message example in Streamlit.")
+st.subheader("This is a success message")
+st.success("This is a success message example in Streamlit.")
+
