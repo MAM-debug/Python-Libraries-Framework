@@ -7,3 +7,15 @@ data={
 }
 df=pd.DataFrame(data)
 print(df)
+print("Names in the Dataframe:")
+
+print(df['NAME'])
+print("ITERATING THROUGH NAMES:")
+for name in df['NAME']:
+    print(name)
+
+print("above will print names one by one by remoing the indexes")
+
+print("Filtering Dataframe based on condition like gpas and age:")
+filter_df=df[df['GPA']>3.5]
+print(filter_df)
