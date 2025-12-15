@@ -19,3 +19,6 @@ print("above will print names one by one by remoing the indexes")
 print("Filtering Dataframe based on condition like gpas and age:")
 filter_df=df[df['GPA']>3.5]
 print(filter_df)
+print("Sorting DF in descending order based on GPA:")
+sorted_df=df.sort_values(by='GPA',ascending=False)
+print(sorted_df)
