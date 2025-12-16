@@ -34,4 +34,8 @@ print(df_no_name)
 
 print("Descriptive statistics of the DataFrame:")
 print(df.describe())
+print("just GPA statistics:")
 print(df['GPA'].describe())
+print("Accessing specific row by index:")
+print(df.iloc[2])  # Accessing the third row (index 2)
+
